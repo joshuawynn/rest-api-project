@@ -1,0 +1,41 @@
+GET http://localhost:3000/subscribers
+
+
+###
+
+GET http://localhost:3000/subscribers/667253342ebe48e0117ae0ee
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":  "Amazing Person",
+    "subscribedToChannel":  "Wynn Enterprise"
+}
+
+###
+
+Delete http://localhost:3000/subscribers/667253342ebe48e0117ae0ee
+
+
+
+###
+Patch http://localhost:3000/subscribers/66725ba4044e01d9614311c5
+
+Content-Type: application/json
+
+{
+    "name":  "Amazing Dude",
+    "subscribedToChannel":  "Wynn Enterprise"
+}
+
+PATCH http://localhost:3000/subscribers/66725ba4044e01d9614311c5
+Content-Type: application/json
+
+{
+    "name": "Amazing Dude",
+    "subscribedToChannel": "Wynn Enterprise"
+}
